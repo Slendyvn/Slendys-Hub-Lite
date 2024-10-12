@@ -1,13 +1,12 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 
-local window = DrRayLibrary:Load("Slendy Lite", "Default")
+local window = DrRayLibrary:Load("Slendy Lite", "string")
 
 local tab = DrRayLibrary.newTab("Main", "1076805417")
 
 tab.newLabel("Credit to RodeStrikerz on discord")
 tab.newLabel("See the tut before watching.")
 
---Shelly
 tab.newButton("Get Shelly", "set the starter toon into Shelly", function()
     	local args = {
     [1] = "Shelly"
@@ -16,7 +15,6 @@ tab.newButton("Get Shelly", "set the starter toon into Shelly", function()
 game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
   	end    
 end)
-
 
 --Astro
 tab.newButton("Get Astro", "set the starter toon into Astro", function()
@@ -28,8 +26,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
   	end    
 end)
 
---Vee
-
 tab.newButton("Get Vee", "set the starter toon into Vee", function()
     	local args = {
     [1] = "Vee"
@@ -39,9 +35,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
   	end    
 end)
 
---Sprout
-
-
 tab.newButton("Get Sprout", "set the starter toon into Sprout", function()
     	local args = {
     [1] = "Sprout"
@@ -50,9 +43,6 @@ tab.newButton("Get Sprout", "set the starter toon into Sprout", function()
 game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
   	end    
 end)
-
---pebble
-
 
 tab.newButton("Get Pebble", "set the starter toon into Pebble", function()
     	local args = {
