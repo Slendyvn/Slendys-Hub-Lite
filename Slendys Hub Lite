@@ -2,23 +2,13 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 local window = DrRayLibrary:Load("Slendy Lite", "Default")
 
+local tab = DrRayLibrary.newTab("Main", "1076805417")
 
-
-local mainColor = Color3.fromRGB(0, 0, 0) -- Customize as you wish; these are in RGB format. (mainColor applies to main colors like background, buttons, etc.)
-
-local secondColor = Color3.fromRGB(0,77, 255) -- Secondary Color; applies to Toggle when activated and slider background.
-
-window:SetTheme(mainColor, secondColor)
-
-
-
-local tab1 = DrRayLibrary.newTab("Main", "1076805417")
-
-tab1.newLabel("Credit to RodeStrikerz on discord")
-tab1.newLabel("See the tut before watching.")
+tab.newLabel("Credit to RodeStrikerz on discord")
+tab.newLabel("See the tut before watching.")
 
 --Shelly
-tab1.newButton("Get Shelly", "set the starter toon into Shelly", function()
+tab.newButton("Get Shelly", "set the starter toon into Shelly", function()
     	local args = {
     [1] = "Shelly"
 }
@@ -29,7 +19,7 @@ end)
 
 
 --Astro
-tab1.newButton("Get Astro", "set the starter toon into Astro", function()
+tab.newButton("Get Astro", "set the starter toon into Astro", function()
     	local args = {
     [1] = "Astro"
 }
@@ -40,7 +30,7 @@ end)
 
 --Vee
 
-tab1.newButton("Get Vee", "set the starter toon into Vee", function()
+tab.newButton("Get Vee", "set the starter toon into Vee", function()
     	local args = {
     [1] = "Vee"
 }
@@ -52,7 +42,7 @@ end)
 --Sprout
 
 
-tab1.newButton("Get Sprout", "set the starter toon into Sprout", function()
+tab.newButton("Get Sprout", "set the starter toon into Sprout", function()
     	local args = {
     [1] = "Sprout"
 }
@@ -64,7 +54,7 @@ end)
 --pebble
 
 
-tab1.newButton("Get Pebble", "set the starter toon into Pebble", function()
+tab.newButton("Get Pebble", "set the starter toon into Pebble", function()
     	local args = {
     [1] = "Pebble"
 }
@@ -74,14 +64,14 @@ game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeSer
 end)
 
 
-local tab2 = DrRayLibrary.newTab("Skins", "4519042263")
+local tab = DrRayLibrary.newTab("Skins", "4519042263")
 
 
-tab2.newLabel("Need 600 ichor,check gameplay tab")
-tab2.newLabel("Dream Skins")
+tab.newLabel("Need 600 ichor,check gameplay tab")
+tab.newLabel("Dream Skins")
 
 
-tab2.newButton("Buy DreamVee", "buy Dreamvee skin", function()
+tab.newButton("Buy DreamVee", "buy Dreamvee skin", function()
     	local args = {
     [1] = "Gacha1",
     [2] = "DreamVee"
@@ -93,7 +83,7 @@ end)
 
 
 
-tab2.newButton("Buy DreamAstro", "buy DreamAstro skin", function()
+tab.newButton("Buy DreamAstro", "buy DreamAstro skin", function()
     	local args = {
     [1] = "Gacha1",
     [2] = "DreamAstro"
@@ -105,7 +95,7 @@ end)
 
 
 
-tab2.newButton("Buy DreamPebble", "buy DreamPebble skin", function()
+tab.newButton("Buy DreamPebble", "buy DreamPebble skin", function()
     	local args = {
     [1] = "Gacha1",
     [2] = "DreamPebble"
@@ -117,7 +107,7 @@ end)
 
 
 
-tab2.newButton("Buy DreamSprout", "buy DreamSprout skin", function()
+tab.newButton("Buy DreamSprout", "buy DreamSprout skin", function()
     	local args = {
     [1] = "Gacha1",
     [2] = "DreamSprout"
@@ -129,7 +119,7 @@ end)
 
 
 
-tab2.newButton("Buy DreamShelly", "buy DreamShelly skin", function()
+tab.newButton("Buy DreamShelly", "buy DreamShelly skin", function()
     	local args = {
     [1] = "Gacha1",
     [2] = "DreamShelly"
@@ -139,11 +129,11 @@ game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
   	end    
 end)
 
-tab2.newLabel("Vintage Skins")
+tab.newLabel("Vintage Skins")
 
 
 
-tab2.newButton("Buy VintageVee", "buy VintageVee skin", function()
+tab.newButton("Buy VintageVee", "buy VintageVee skin", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintageVee"
@@ -155,7 +145,7 @@ end)
 
 
 
-tab2.newButton("Buy VintageAstro", "buy VintageAstro skin", function()
+tab.newButton("Buy VintageAstro", "buy VintageAstro skin", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintageAstro"
@@ -168,7 +158,7 @@ end)
 
 
 
-tab2.newButton("Buy VintageSprout", "buy VintageSprout skin", function()
+tab.newButton("Buy VintageSprout", "buy VintageSprout skin", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintageSprout"
@@ -179,7 +169,7 @@ game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
 end)
 
 
-tab2.newButton("Buy VintageShelly", "buy VintageShelly skin", function()
+tab.newButton("Buy VintageShelly", "buy VintageShelly skin", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintageShelly"
@@ -190,7 +180,7 @@ game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
 end)
 
 
-tab2.newButton("Buy VintagePebble", "buy VintagePebble skin", function()
+tab.newButton("Buy VintagePebble", "buy VintagePebble skin", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintagePebble"
@@ -200,7 +190,7 @@ game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
   	end      
 end)
 
-tab2.newButton("Buy Shampoo", "meh,Shrimpo", function()
+tab.newButton("Buy Shampoo", "meh,Shrimpo", function()
     local args = {
     [1] = "Gacha1",
     [2] = "VintageShirmpo"
@@ -211,13 +201,13 @@ game:GetService("ReplicatedStorage").BuySkin:InvokeServer(unpack(args))
 end)
 
 
-local tab3 = DrRayLibrary.newTab("Fake Scritps", "5009915812")
+local tab = DrRayLibrary.newTab("Fake Scritps", "5009915812")
 
 
-tab3.newLabel("use when in seletected toon tab(in run)/tut on discord")
+tab.newLabel("use when in seletected toon tab(in run)/tut on discord")
 
 
-tab3.newButton("Press To Troll", "Change the icon into dandy", function()
+tab.newButton("Press To Troll", "Change the icon into dandy", function()
     local args = {
     [1] = "Dandy"
 }
@@ -227,20 +217,20 @@ game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Voted"
 end)
 
 
-local tab4 = DrRayLibrary.newTab("Gameplay", "9142678957")
+local tab = DrRayLibrary.newTab("Gameplay", "9142678957")
 
 
-tab4.newLabel("Credits are in script / see full tut on discord before use the ichor script")
+tab.newLabel("Credits are in script / see full tut on discord before use the ichor script")
 
-tab4.newButton("All in one", "Use dandys world OP script", function()
+tab.newButton("All in one", "Use dandys world OP script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Dandy's%20World"))("t.me/arceusxscripts")
 end)
 
-tab4.newButton("Ichor script", "Use Ichor script", function()
+tab.newButton("Ichor script", "Use Ichor script", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Dandy's-World-ALPHA-G0bbyD0llan-DW-18896"))()
 end)
 
-tab4.newButton("Distract script", "Use Distract script", function()
+tab.newButton("Distract script", "Use Distract script", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Script-fly-18486"))()
 end)
 
